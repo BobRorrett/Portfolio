@@ -1,0 +1,233 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    background-color: #000000;
+    font-family: 'Rajdhani',sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+  }
+  a {
+    text-decoration: none;
+  }
+  main {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  section {
+    min-height: min-content;
+  }
+  header {
+    background: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0)); /* Adjust the alpha value for transparency */
+    color: white;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Orbitron',sans-serif;
+    align-items: center;
+    text-transform: uppercase;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    transition: top 0.3s; /* Add smooth transition effect */
+  }
+  header.hidden {
+    top: -200px; /* Hide the header initially */
+  }
+
+  .logo {
+    flex-grow: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 0 3px white; /* White outline on hover */
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
+
+
+ 
+  .headline {    
+    font-family: 'Rajdhani';
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .headline h2 {
+    font-family: 'Orbitron',sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 80px;
+  }
+  .headline h3 {
+    font-family: 'Orbitron',sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  .block {
+    /* border: 2px solid #ddd;  */
+    padding: 10px;
+    text-align: center;
+    flex-direction: column;
+    
+  }
+  .content {    
+    font-family: 'Rajdhani';
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+    height: 80vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%; /* Adjust the width of the text */
+
+
+  }
+
+  .content h2, .block h2, .miniblock h2 {
+    font-family: 'Orbitron',sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 80px;
+    margin: 0px ;
+  }
+  .content h3, .block h3, .miniblock h3 {
+    font-family: 'Orbitron',sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .content h4, .block h4, .miniblock h4 {
+    font-family: 'Orbitron',sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .content img {
+    max-width: 100%; /* Make sure the image doesn't exceed its container */
+    max-height: 100%; /* Make sure the image doesn't exceed its container */
+    object-fit: cover; /* Maintain aspect ratio without stretching */
+  }
+  
+  .content p {
+    text-align: justify;
+    width: calc(50% - 20px);
+    object-fit: cover;
+  }
+
+  .miniblock {
+    width: 300px;  
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    flex-direction: column; 
+    margin-bottom: 20px; 
+  }
+  
+  .miniblock img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .miniblock:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 0 3px white; /* White outline on hover */
+  }
+
+  footer {
+    color: white;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Orbitron',sans-serif;
+    align-items: center;
+    width: 100%;
+
+  }
+  .social-icons {
+    display: flex;
+    gap: 30px;
+  }
+
+  .social-icons a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .social-icons svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+  }
+
+/* Media query for smaller screens */
+@media screen and (max-width: 1200px) {
+    .content p {
+        width: calc(100%-20px);
+    } 
+    .miniblock {
+      width: calc(50% - 20px); /* 50% width with margin */
+    }
+    section {
+        height: 250vh;
+        /* min-height: min-content; */
+    }
+  }
+  
+  /* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+    .miniblock {
+      width: 100%; /* 100% width with no margin */
+    }
+    .content p {
+        width: calc(100%-20px);
+    }
+    section {
+        height: 500vh;
+        /* min-height: min-content; */
+    }
+  }
