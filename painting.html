@@ -4,32 +4,102 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Your Website</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" />
+  <script src="https://kit.fontawesome.com/4728565769.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="Miscellaneous_pics/Taskbar_Icon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="Miscellaneous_pics/Taskbar_Icon.png">
+  <title>Rob Borrett</title>
 </head>
 <body>
 
-  <header>
-    <h1>Your Website</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header id = "sticky-header" class="hidden">
+        <div class="logo">
+            <a href="index.html"><h1>Rob Borrett</h1></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="engineering.html">Engineering</a></li>
+            <li><a href="painting.html">Painting</a></li>
+          </ul>
+        </nav>
+    </header>
 
   <main>
-    <section class="content">
-      <h2>Welcome to Our Website</h2>
-      <p>This is the main content area of your website.</p>
+    <!-- This is the opening view for the user -->
+    <section class="headline">
+      <h2>Painting</h2>
     </section>
+
+    <!-- This section creates a scrollable gallery of images  -->
+    <section id = "gallery_section">
+    <div class="gallery-container" onwheel="scrollHorizontally(event)">
+      <div class="gallery-item" onclick="openModal('/Painting/Michelle.jpg')">
+        <img src="/Painting/Michelle.jpg" alt="Michelle">
+      </div>
+      <div class="gallery-item" onclick="openModal('/Painting/Piano.jpg')">
+        <img src="/Painting/Piano.jpg" alt="Pianist">
+      </div>
+      <div class="gallery-item" onclick="openModal('Painting/Rembrandt.jpg')">
+        <img src="Painting/Rembrandt.jpg" alt="Rembrandt">
+      </div>
+      <div class="gallery-item" onclick="openModal('Painting/Glasgow.jpg')">
+        <img src="Painting/Glasgow.jpg" alt="Glasgow">
+      </div>
+      <div class="gallery-item" onclick="openModal('Painting/Torridon.jpg')">
+        <img src="Painting/Torridon.jpg" alt="Torridon">
+      </div>
+      <div class="gallery-item" onclick="openModal('Painting/Rob1.jpg')">
+        <img src="Painting/Rob1.jpg" alt="Rob1">
+      </div>
+      <div class="gallery-item" onclick="openModal('Painting/Orchid.jpg')">
+        <img src="Painting/Orchid.jpg" alt="Orchid">
+      </div>
+      <div class="gallery-item" onclick="openModal('Painting/Tennants.jpg')">
+        <img src="Painting/Tennants.jpg" alt="Tennants">
+      </div>
+      <div class="gallery-item" onclick="openModal('Painting/Japan.jpg')">
+        <img src="Painting/Japan.jpg" alt="Japan">
+      </div>
+      <div class="gallery-item" onclick="openModal('Painting/Grandad.jpg')">
+        <img src="Painting/Grandad.jpg" alt="Grandad">
+      </div>
+      <div class="gallery-item" onclick="openModal('Painting/Grandma.jpg')">
+        <img src="Painting/Grandma.jpg" alt="Grandma">
+      </div>
+      <div class="gallery-item" onclick="openModal('Painting/Cow.jpg')">
+        <img src="Painting/Cow.jpg" alt="Highland Cow">
+      </div>
+      <div class="gallery-item" onclick="openModal('Painting/Rob2.jpg')">
+        <img src="Painting/Rob2.jpg" alt="Rob2">
+      </div>
+      <!-- Add more gallery items as needed -->
+    </div>
+  
+    <div class="modal" onclick="closeModal()">
+      <div class="modal-content">
+        <img id="modalImage" src="" alt="Modal Image">
+      </div>
+    </div>
+  </section>
+
   </main>
 
   <footer>
-    <p>&copy; 2023 Your Company</p>
-  </footer>
 
+    <div class="logo">
+      <h2>Rob Borrett</h2>
+      <div class="social-icons">
+        <!-- Check and update Font Awesome classes as needed -->
+        <a href="tel:07415417601"><i class="fas fa-phone"></i> Phone: 07415417601</a>
+        <a href="mailto:robjborrett@gmail.com"><i class="fas fa-envelope"></i> Email: robjborrett@gmail.com</a>
+        <a href="https://www.linkedin.com/in/rob-borrett/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+  <script src="scrolling-gallery.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
