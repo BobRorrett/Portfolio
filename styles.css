@@ -25,6 +25,7 @@ body {
   
   section {
     min-height: min-content;
+    padding: 20px;
   }
   header {
     background: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0)); /* Adjust the alpha value for transparency */
@@ -78,7 +79,7 @@ body {
 
  
   .headline {    
-    font-family: 'Rajdhani';
+    font-family: 'Rajdhani',sans-serif;
     color: white;
     font-size: 20px;
     font-weight: 400;
@@ -118,10 +119,8 @@ body {
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-evenly;
-    height: 80vh;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 100%; /* Adjust the width of the text */
 
 
   }
@@ -147,32 +146,45 @@ body {
     font-size: 30px;
     font-weight: 400;
   }
+  .content h5, .block h5, .miniblock h5 {
+    font-family: 'Rajdhani',sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+  .miniblock h1,.miniblock h2,.miniblock h3,.miniblock h4,.miniblock h5{
+    padding: 0px;
+  }
 
   .content img {
     max-width: 100%; /* Make sure the image doesn't exceed its container */
-    max-height: 100%; /* Make sure the image doesn't exceed its container */
-    object-fit: cover; /* Maintain aspect ratio without stretching */
+    max-height: min(100vh 100%); /* Make sure the image doesn't exceed its container */
+    object-fit: contain; /* Maintain aspect ratio without stretching */
+    padding: 15px
   }
   
   .content p {
     text-align: justify;
-    width: calc(50% - 20px);
     object-fit: cover;
+    min-width: 300px;
+    padding: 15px;
   }
 
   .miniblock {
-    width: 300px;  
+    min-width: 300px;
+    width: calc(15vw - 20px);  
     margin: 15px;
     padding: 10px;
     text-align: center;
-    flex-direction: column; 
-    margin-bottom: 20px; 
+    flex-direction: column;  
   }
   
   .miniblock img{
-    max-width: 100%;
+    max-width: 250px;
+    max-height: 60vh;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
   }
   
   .miniblock:hover {
@@ -183,8 +195,10 @@ body {
     color: white;
     padding: 0px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    font-family: 'Orbitron',sans-serif;
+    font-family: 'Rajdhani',sans-serif;
+    font-size: 20;
     align-items: center;
     width: 100%;
 
@@ -192,11 +206,13 @@ body {
   .social-icons {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
   }
 
   .social-icons a {
     color: white;
     text-decoration: none;
+    text-transform: none;
   }
 
   .social-icons svg {
@@ -209,7 +225,7 @@ body {
     overflow-x: auto;
     white-space: nowrap;
     padding: 20px;
-    max-height: 60vh;
+    max-height: 70vh;
     max-width: 100vw;
     overflow: hidden; /* Hide the vertical scrollbar on the body */
   }
@@ -220,10 +236,10 @@ body {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
     max-width: 100%;
-    max-height: 60vh;
+    max-height: 70vh;
   }
   .gallery-item img {
-    max-height: 50vh; /* Ensure images don't exceed the width of the container */
+    max-height: 60vh; /* Ensure images don't exceed the width of the container */
     width: auto;   /* Maintain the aspect ratio of the images */
   }
 
@@ -267,10 +283,6 @@ body {
     .miniblock {
       width: calc(50% - 20px); /* 50% width with margin */
     }
-    section {
-        height: 250vh;
-        /* min-height: min-content; */
-    }
   }
   
   /* Media query for even smaller screens */
@@ -280,9 +292,5 @@ body {
     }
     .content p {
         width: calc(100%-20px);
-    }
-    section {
-        height: 500vh;
-        /* min-height: min-content; */
     }
   }
