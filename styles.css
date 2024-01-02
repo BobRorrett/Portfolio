@@ -17,6 +17,7 @@ body {
   }
   a {
     text-decoration: none;
+    color: white;
   }
   main {
     flex-grow: 1;
@@ -126,28 +127,28 @@ body {
 
   }
 
-  .content h2, .block h2, .miniblock h2 {
+  h2, .content h2, .block h2, .miniblock h2 {
     font-family: 'Orbitron',sans-serif;
     color: #ffffff;
     text-transform: uppercase;
     font-size: 80px;
     margin: 0px ;
   }
-  .content h3, .block h3, .miniblock h3 {
+  h3, .content h3, .block h3, .miniblock h3 {
     font-family: 'Orbitron',sans-serif;
     color: #ffffff;
     text-transform: uppercase;
     font-size: 40px;
     font-weight: 400;
   }
-  .content h4, .block h4, .miniblock h4 {
+  h4, .content h4, .block h4, .miniblock h4 {
     font-family: 'Orbitron',sans-serif;
     color: #ffffff;
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 400;
   }
-  .content h5, .block h5, .miniblock h5 {
+  h5, .content h5, .block h5, .miniblock h5 {
     font-family: 'Rajdhani',sans-serif;
     color: #ffffff;
     font-size: 25px;
@@ -178,9 +179,10 @@ body {
     margin: 15px;
     padding: 10px;
     text-align: center;
-    flex-direction: column;  
+    flex-direction: column;
+    text-decoration: none;
+    color: white;   
   }
-  
   .miniblock img{
     max-width: 250px;
     max-height: 60vh;
@@ -233,20 +235,49 @@ body {
 
   .gallery-item {
     display: inline-block;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    word-wrap: break-word;
     margin-right: 10px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
     max-width: 100%;
     max-height: 70vh;
+    align-content: center;
   }
   .gallery-item img {
-    max-height: 60vh; /* Ensure images don't exceed the width of the container */
+    max-height: 65vh; /* Ensure images don't exceed the width of the container */
     width: auto;   /* Maintain the aspect ratio of the images */
   }
 
   .gallery-item:hover {
     transform: scale(1.1);
   }
+
+    .info-card {
+    /* max-height: 60vh; */
+    margin: 20px;
+    max-width: 300px;
+    /* padding: 10px; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    word-wrap: break-word;
+    overflow-wrap: break-word;   
+  }
+  .info-card img{
+    /* max-height: 50%; */
+    width: 100%;
+    object-fit: contain;
+  }
+  .info-card p {
+    text-align: justify;
+    object-fit: cover;
+    white-space: normal;
+  }
+
 
   .modal {
     display: none;
