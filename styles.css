@@ -105,6 +105,18 @@ body {
     font-weight: 400;
   }
 
+
+  .parallax-container {
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
   .block {
     /* border: 2px solid #ddd;  */
     padding: 10px;
@@ -172,7 +184,10 @@ body {
     min-width: 300px;
     padding: 15px;
   }
-
+  .mini-block{
+    text-align: center;
+    
+  }
   .miniblock {
     min-width: 300px;
     width: calc(15vw - 20px);  
@@ -192,6 +207,11 @@ body {
   
   .miniblock:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 0 3px white; /* White outline on hover */
+  }
+
+  .halfblock:hover{
+
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 0 3px white; /* White outline on hover */
   }
 
   footer {

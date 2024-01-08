@@ -13,6 +13,6 @@ function closeModal() {
 function scrollHorizontally(event) {
     const delta = Math.max(-1, Math.min(1, (event.wheelDelta || -event.detail)));
     const galleryContainer = document.querySelector('.gallery-container');
-    galleryContainer.scrollLeft -= delta * 30; // Adjust the scrolling speed
+    galleryContainer.scrollLeft -= delta * 50; // Adjust the scrolling speed
     event.preventDefault();
   }
