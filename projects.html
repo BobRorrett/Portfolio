@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,155 +13,185 @@
   <link rel="apple-touch-icon" sizes="180x180" href="Miscellaneous_pics/Taskbar_Icon.png">
   <title>Rob Borrett</title>
 </head>
+
 <body>
 
-    <header id = "sticky-header" class="hidden">
-        <div class="logo">
-            <a href="index.html"><h1>Rob Borrett</h1></a>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="art.html">Art</a></li>
-          </ul>
-        </nav>
-    </header>
+  <header id="sticky-header" class="hidden">
+    <div class="logo">
+      <a href="index.html">
+        <h1>Rob Borrett</h1>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="art.html">Art</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
     <!-- This is the opening view for the user -->
     <section class="headline">
       <h2>Projects</h2>
     </section>
-
+    <hr>
     <!-- Photos and links to other pages on the website -->
     <section>
-      <div class = "block">
-        <h3>Featured Projects</h3>    
-        <div class="content" id = "projects_nav">
-            <!-- repeat the following as required... -->
-            <div class="miniblock" id = "painting_block">
-                <a href="bubble_machine.html">
-                    <h4>Bubble machine</h4>
-                    <img src="Engineering/Bubbles/thumbnail.png" >
-                </a>
-            </div>      
-            
-            <!-- ... until here -->
-
-            <div class="miniblock" id = "uni_block">
-                <a href="computer_vision.html">    
-                    <h4>Computer vision robot</h4>
-                    <img src="Engineering/University/Thumbnail.png" >
-                </a>
-            </div> 
-
-            <div class="miniblock" id = "uni_block">
-              <a href="sensor_module.html">    
-                  <h4>Sensor module </h4>
-                  <img src="Engineering/HES sensor/thumbnail.png" >
-              </a>
-          </div> 
-
-          <div class="miniblock" id = "website_block">
-              <a href="website.html">    
-                  <h4>Creating this website</h4>
-                  <img src="Engineering/Website/thumbnail.png" >
-                  <p>
-              </a>
-          </div> 
-
-          <div class="miniblock" id = "reverse_engineering_block">
-            <a href="reverse_engineering.html">    
-                <h4>Reverse Engineering</h4>
-                <img src="Engineering/Reverse_engineering/thumbnail.png" >
-                <p>
+      <div class="block">
+        <h3>Featured Projects</h3>
+        <div class="content" id="projects_nav">
+          <!-- repeat the following as required... -->
+          <div class="miniblock" id="painting_block">
+            <a href="bubble_machine.html">
+              <h4>Bubble machine</h4>
+              <img src="Engineering/Bubbles/thumbnail.png">
             </a>
-        </div> 
+          </div>
 
+          <!-- ... until here -->
+
+          <div class="miniblock" id="uni_block">
+            <a href="computer_vision.html">
+              <h4>Computer vision robot</h4>
+              <img src="Engineering/University/Thumbnail.png">
+            </a>
+          </div>
+
+          <div class="miniblock" id="uni_block">
+            <a href="sensor_module.html">
+              <h4>Sensor module </h4>
+              <img src="Engineering/HES sensor/thumbnail.png">
+            </a>
+          </div>
+
+          <div class="miniblock" id="website_block">
+            <a href="website.html">
+              <h4>Creating this website</h4>
+              <img src="Engineering/Website/thumbnail.png">
+              <p>
+            </a>
+          </div>
+
+          <div class="miniblock" id="reverse_engineering_block">
+            <a href="reverse_engineering.html">
+              <h4>Reverse Engineering</h4>
+              <img src="Engineering/Reverse_engineering/thumbnail.png">
+              <p>
+            </a>
+          </div>
+
+
+          <div class="miniblock" id="investment_casting_block">
+            <a href="investment_casting.html">
+              <h4>Investment Casting </h4>
+              <img src="Painting/Statue/thumbnail.png">
+              <p>
+            </a>
+          </div>
         </div>
       </div>
     </section>
+    <hr>
 
 
- 
-        <!-- This section creates a scrollable gallery of images  -->
-        <section id = "gallery_section">
-          <h3>
-            Other projects / involvements
-          </h3>
-          <div class="gallery-container" onwheel="scrollHorizontally(event)">
-            <div class="gallery-item" >
-              <div class="info-card" >  
-                    <img src="Engineering/other_projects/chemify_logo.svg" >
-                      <p> I spent a year and a half in the in the engineering team of a chemistry automation startup in its infancy, desigining machines to enable the "digitisation" of chemistry. Chemify has recently rasied $43 million of funding and is rapidly growing. </p>                    
-              </div>               
-            </div>
-
-            <div class="gallery-item" >
-              <div class="info-card" >  
-                    <img src="Engineering/other_projects/Coalesce.png" >
-                      <p> During my placement year at university i worked for Coalesce, a product development company specialising in medical devices. I had a great year learning from the team and designing mechanisms for dry powder inhalers.  </p>                    
-              </div>               
-            </div>
-
-            <div class="gallery-item" >
-              <div class="info-card" >  
-                    <img src="Engineering/other_projects/bath_uni.png" >
-                      <p> I studied at the Universtiy of Bath, graduating in 2022, with an integrated masters degree in Integrated Design Engineering with a year long industry placement.</p>                    
-              </div>               
-            </div>
-
-            <div class="gallery-item" >
-              <div class="info-card" >  
-                    <img src="Engineering/other_projects/mando.png" >
-                      <p> Building and painting a lifesize and wearable Mandolorian helmet, the colourscheme inspired by WW2 fighter planes </p>                    
-              </div>               
-            </div>
-          
-            <div class="gallery-item" >
-              <div class="info-card" >  
-                    <img src="Engineering/other_projects/ROS-2_logo.png" >
-                      <p> I have an interest in robotics and control. I am currently learning to use ROS 2 and exploring its many applications. Watch this space! </p>                    
-              </div>               
-            </div>
-
-            <div class="gallery-item" >
-              <div class="info-card" >  
-                    <img src="Engineering/other_projects/3Dprint" >
-                      <p> 3D printing has become extremly accessible, with a wealth of online knowledge at your fingertips and affordable machines. I have had a lot of fun maintaining and upgrading my printer over the last few years, and it has been exteremly useful for both my university and home projects. </p>                    
-              </div>               
-            </div>
-
-            <div class="gallery-item" >
-              <div class="info-card" >  
-                    <img src="Engineering/other_projects/forge" >
-                      <p> What home doesnt need a forge? I spent lockdown building a coffee-can forge, and making a series of small knives. It is safe to say i wont be packing it all in to become a blacksmith anytime soon, but it was a lot of fun. </p>                    
-              </div>               
-            </div>
-
-            <div class="gallery-item" >
-              <div class="info-card" >  
-                    <img src="Engineering/other_projects/Hobbit.jpeg" >
-                      <p> A fancy dress costume taken too far? These lifelike hobbit feet were built on top of a £3 pair of primark trainers, with a 3D printed shell, covered in liquid latex soaked tissues to create a skin like effect, and finshed with some paint and fake hair.</p>                    
-              </div>               
-            </div>
-
-            <div class="gallery-item" >
-              <div class="info-card" >  
-                    <img src="Engineering/other_projects/c2c.jpg" >
-                      <p> A freind and I completed the Coast to Coast walk in 2021. It is a 190 mile hike wich takes about 12 days. The route takes you through the Lake District, Yorkshire Dales and the Yorkshire Moors</p>                    
-              </div>               
-            </div>
-
+    <!-- This section creates a scrollable gallery of images  -->
+    <section id="gallery_section">
+      <div class="content">
+      <h3>
+        Other projects / involvements
+      </h3>
+    </div>
+      <div class="gallery-container" onwheel="scrollHorizontally(event)">
+        <div class="gallery-item">
+          <div class="info-card">
+            <img src="Engineering/other_projects/chemify_logo.svg">
+            <p> I spent a year and a half in the in the engineering team of a chemistry automation startup in its
+              infancy, designing machines to enable the "digitisation" of chemistry. Chemify has recently raised $43
+              million of funding and is rapidly growing. </p>
           </div>
-        </section>
-      
-        <section>
-          <a href="cool_stuff.html">
-          <h3> Just some other things that i find cool...</h3>
-        </a>
-        </section>
+        </div>
+
+        <div class="gallery-item">
+          <div class="info-card">
+            <img src="Engineering/other_projects/Coalesce.png">
+            <p> During my placement year at university i worked for Coalesce, a product development company specialising
+              in medical devices. I had a great year learning from the team and designing mechanisms for dry powder
+              inhalers. </p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="info-card">
+            <img src="Engineering/other_projects/bath_uni.png">
+            <p> I studied at the University of Bath, graduating in 2022, with an integrated masters degree in Integrated
+              Design Engineering with a year long industry placement.</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="info-card">
+            <img src="Engineering/other_projects/mando.png">
+            <p> Building and painting a lifesize and wearable Mandolorian helmet, the colourscheme inspired by WW2
+              fighter planes </p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="info-card">
+            <img src="Engineering/other_projects/ROS-2_logo.png">
+            <p> I have an interest in robotics and control. I am currently learning to use ROS 2 and exploring its many
+              applications. Watch this space! </p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="info-card">
+            <img src="Engineering/other_projects/3Dprint">
+            <p> 3D printing has become extremely accessible, with a wealth of online knowledge at your fingertips and
+              affordable machines. I have had a lot of fun maintaining and upgrading my printer over the last few years,
+              and it has been extremely useful for both my university and home projects. </p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="info-card">
+            <img src="Engineering/other_projects/forge">
+            <p> What home doesn't need a forge? I spent lockdown building a coffee-can forge, and making a series of
+              small knives. It is safe to say i wont be packing it all in to become a blacksmith anytime soon, but it
+              was a lot of fun. </p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="info-card">
+            <img src="Engineering/other_projects/Hobbit.jpeg">
+            <p> A fancy dress costume taken too far? These lifelike hobbit feet were built on top of a £3 pair of
+              Primark trainers, with a 3D printed shell, covered in liquid latex soaked tissues to create a skin like
+              effect, and finished with some paint and fake hair.</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div class="info-card">
+            <img src="Engineering/other_projects/c2c.jpg">
+            <p> A friend and I completed the Coast to Coast walk in 2021. It is a 190 mile hike which takes about 12
+              days. The route takes you through the Lake District, Yorkshire Dales and the Yorkshire Moors</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <hr>
+    <section>
+      <div: class="content">
+      <a href="cool_stuff.html">
+        <h3> Just some other things that i find cool...</h3>
+      </a>
+    </div>
+    </section>
+    <hr>
 
 
   </main>
@@ -170,7 +201,7 @@
     <div class="logo">
       <div class="social-icons">
         <!-- Check and update Font Awesome classes as needed -->
-        
+
         <a href="mailto:robjborrett@gmail.com"><i class="fas fa-envelope"></i> Email: robjborrett@gmail.com</a>
         <a href="https://www.linkedin.com/in/rob-borrett/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
       </div>
@@ -179,4 +210,5 @@
   <script src="script.js"></script>
   <script src="scrolling-gallery.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,159 +13,155 @@
   <link rel="apple-touch-icon" sizes="180x180" href="Miscellaneous_pics/Taskbar_Icon.png">
   <title>Rob Borrett</title>
 </head>
+
 <body>
 
-    <header id = "sticky-header" >
-        <div class="logo">
-            <a href="index.html"><h1>Rob Borrett</h1></a>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="art.html">Art</a></li>
-          </ul>
-        </nav>
-    </header>
+  <header id="sticky-header">
+    <div class="logo">
+      <a href="index.html">
+        <h1>Rob Borrett</h1>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="art.html">Art</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
-    
+
     <!-- <div id="drawing-area">
       <section class="parallax-container" style="background-image:  url('Painting/Statue/Statue.png'); background-size: cover;">
       <h2>Investment Casting a Bronze Statue </h2>
       </section>
     </div> -->
 
-    <div id="drawing-area">
-      <section class="headline">
+    <section class="headline">
       <h2>Controlling a rolling robot using computer vision and path planning</h2>
-      </section>
-    </div>
+    </section>
+    <hr>
 
 
-  <section>
-    <div>
-      <h4> Step 1: Creating the mould </h4>
-    </div>
-   <div class="content">
-        <div class = "mini-block" style="width: calc(50vw - 50px); min-width: 400px;">
-        <img src="Painting/Statue/Step0.png" style="padding: none;">
-        <p style="width: calc(40vw - 50px); min-width: 400px;">  
-          A mould of the initial model, (made from modelling plasticine), is made in two halves. The first half is made by by pouring silcone over the model when it is half submerged in clay. <br><br>
-          The The model is then flipped over and silicone is poured over the top again, creating the second half of the mould. Notice the cone added to the mould - this is to allow wax to be poured into the mould.
+    <section>
+      <div class="content">
+        <h5> This project involved building a fully autonomous rolling robot from scratch. In a team of three, I was
+          responsible for creating the computer vision and navigation system. The project was meant to replicate a
+          satellite communicating with a rover on the surface of Mars. Therefore a webcam was placed high above the work
+          area. The computer vision and navigation system was created using Python and OpenCV, and communicated with the
+          robot wirelessly via a TCP connection. <br><br> It was up to us to decide what we wanted our robot to do.
+          We decided to show it navigating through an environment filled with obstacles, and also crossing a "Martian
+          highway" to
+          show its real time response to a changing environment</h5>
+      </div>
+    </section>
+    <hr>
+
+
+    <section>
+      <div class="content">
+        <div class="mini-block" style="width: calc(70vw - 50px); min-width: 400px;">
+          <h3> The Robot</h3>
+          <p>The robot was a rolling robot, contained within a plastic ball. It was self balancing, with a pendulum used
+            for turning. It relied on shifting its centre of gravity to make it roll.
           </p>
-        </div>
-        <div class = "mini-block" style="width: calc(40vw - 50px); min-width: 400px;">
-          <img src="Painting/Statue/Step1.png" style="padding: none; ">
-          <img src="Painting/Statue/Step2.png" style="padding: none;">
-        </div>
-        <div class = "mini-block" style="width: calc(40vw - 50px); min-width: 400px;">
-          <img src="Painting/Statue/Step3.png" style="padding: none; ">
-        </div>
-    </div>
-  </section>
 
-  <section>
-    <div>
-      <h4> Step 2: Creating an expendable wax replica </h4>
-    </div>
-   <div class="content">
-        <div class = "mini-block" style="width: calc(50vw - 50px); min-width: 400px;">
-          <p style="width: calc(50vw - 50px); min-width: 400px;">  
-            The mould is filled with hot wax, and a wax copy of the original is made.
+          <img src="Engineering/Computer vision/Robot.webp" alt="The robot" style="max-height: 50vh;">
+          <p>
+            As the ball was clear and the
+            internal hardware was mostly constant, clusters of internal LEDs were used to determine the position and
+            orientation
+            of the robot.
           </p>
-        <img src="Painting/Statue/Step4.png" style="padding: none;">
+
+          <img src="Engineering/Computer vision/LEDs.jpg" alt="" style="max-width:600px;">
+          <img src="Engineering/Computer vision/LED1.png" alt="" style="max-height:264px;">
+
+
+
+
+
+
+
         </div>
-    </div>
-  </section>
+      </div>
+    </section>
+    <hr>
 
-
-
-
-
-
-  <section>
-    <div>
-      <h4> Step 3: Creating an expenadble mould of the wax model </h4>
-    </div>
-   <div class="content">
-        <div class = "mini-block" style="width: calc(50vw - 50px); min-width: 400px;">
-          <p style="width: calc(50vw - 50px); min-width: 400px;">  
-            The wax model is then chopped into bits, and more channels are added to each part to allow for the metal to be poured into the mould. Each part is then coated in various grades of plaster, forming a ceramic shell around each part.<br><br>
-The model is cast in smaller parts because it makes it easier for the molten bronze to fill the moulds, and smaller parts are less prone to shrinkage and warping, as the metal cools.
-
+    <section>
+      <div class="content">
+        <div class="mini-block" style="width: calc(70vw - 50px); min-width: 400px;">
+          <h3> Path planning</h3>
+          <img src="Engineering/Computer vision/Setup.webp" style="max-width: 600px;">
+          <p>The vision system was capable of detecting the position and orientation of the robot, as well as obstacles
+            and travel destinations. ArUco codes were used to mark these destinations. The Astar search algorithm was
+            used to plan the routes that the robot could take to avoid the green obstacles. <br> <br>
+            This was done using various colour masks and pixelating the images.
           </p>
-        <img src="Painting/Statue/Step5.png" style="padding: none;">
-        <p style="width: calc(50vw - 50px); min-width: 400px;">  
-          The wax within the ceramic moulds removed, by heating the ceramic shells. 
 
-        </p>
-        </div>
-    </div>
-  </section>
-
-  <section>
-    <div>
-      <h4> Step 4: Casting the parts in bronze </h4>
-    </div>
-   <div class="content">
-        <div class = "mini-block" style="width: calc(45vw - 50px); min-width: 400px;">
-          <p style="width: calc(45vw - 50px); min-width: 400px;">  
-            These ceramic moulds are filled with molten bronze, and allowed to cool. Once the bronze has set, the pieces are removed from the moulds.
-          </p>
-        <img src="Painting/Statue/Step6.png" style="padding: none;">
-        </div>
-        <div class = "mini-block" style="width: calc(45vw - 50px); min-width: 400px;">
-        <img src="Painting/Statue/Step7.png" style="padding: none;">
-        </div>
-    </div>
-  </section>
-
-  <section>
-    <div>
-      <h4> Step 5: Assembling the statue </h4>
-    </div>
-   <div class="content">
-        <div class = "mini-block" style="width: calc(45vw - 50px); min-width: 400px;">
-          <p style="width: calc(45vw - 50px); min-width: 400px;">  
-            The model is welded back together. 
-          </p>
-        <img src="Painting/Statue/Step8.png" style="padding: none;">
-        </div>
-        <div class = "mini-block" style="width: calc(45vw - 50px); min-width: 400px;">
-        <img src="Painting/Statue/Step9.png" style="padding: none;">
-        </div>
-        <div class = "mini-block" style="width: calc(45vw - 50px); min-width: 400px;">
-          <img src="Painting/Statue/Step10.png" style="padding: none;">
+          <div class="content">
+            <img src="Engineering/Computer vision/mask1.png" alt="">
+            <img src="Engineering/Computer vision/mask2.png" alt="">
+            <img src="Engineering/Computer vision/mask3.png" alt="">
           </div>
-    </div>
-  </section>
 
-  <section>
-    <div>
-      <h4> Step 6: Finishing the statue </h4>
-    </div>
-   <div class="content">
-        <div class = "mini-block" style="width: calc(45vw - 50px); min-width: 400px;">
-          <p style="width: calc(45vw - 50px); min-width: 400px;">  
-            Once fully assembled, the statue is polished, and a patina is applied. Notice the  screw, welded to the foot so the statue can be mounted to a base.  
+
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <div class="content">
+        <div class="content"><h3> Crossing a Martian highway</h3></div>
+
+        <div class="mini-block" style="width: calc(70vw - 50px); min-width: 400px;">
+          <img src="Engineering/Computer vision/Setup2.png" style="max-width: 600px;">
+          <p>The Martian highway was projected onto the floor, using a projector. Cars, represented by ArUco codes,
+            would enter the the two lanes from the left and right. The image processing software that I developed
+            identifies the cars, determines their speed, and then predicts when they will enter the section of road
+            that the robot has to cross. The robot then waits until the algorithm determines a safe time to cross, and
+            then safely rolls across the road.The cars were spawned randomly and at different speeds, and the algorithm
+            gained all the information about the environment from a webcam, next to the projector.
           </p>
-        <img src="Painting/Statue/Step11.png" style="padding: none;">
-        </div>
-        <div class = "mini-block" style="width: calc(45vw - 50px); min-width: 400px;">
-        <img src="Painting/Statue/Statue.png" style="padding: none;">
-        </div>
-    </div>
-  </section>
 
-</main>
+          <div class="content">
+            <img src="Engineering/Computer vision/Frame1.png" alt="" style="height: 400px;">
+            <img src="Engineering/Computer vision/Frame2.png" alt="" style="height: 400px;">
+            <img src="Engineering/Computer vision/Frame3.png" alt="" style="height: 400px;">
+            <img src="Engineering/Computer vision/Frame4.png" alt="" style="height: 400px;">
+          </div>
+
+        </div>
+      </div>
+        
+      </section>
+      <hr>
+      <section>
+      
+      <div class="content">
+        <h3> Full report</h3>
+      </div>
+
+      <div class="content">
+
+        <embed src="Engineering/Computer vision/Mechatronics_design_project_2.pdf" type="application/pdf" width="100%"
+          height="800px" />
+      </div>
+
+    </section>
+    <hr>
+
+
+  </main>
 
   <footer>
 
     <div class="logo">
       <div class="social-icons">
         <!-- Check and update Font Awesome classes as needed -->
-        
+
         <a href="mailto:robjborrett@gmail.com"><i class="fas fa-envelope"></i> Email: robjborrett@gmail.com</a>
         <a href="https://www.linkedin.com/in/rob-borrett/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
       </div>
@@ -174,4 +171,5 @@ The model is cast in smaller parts because it makes it easier for the molten bro
   <script src="paralax.js"></script>
   <!-- <script src="script.js"></script> -->
 </body>
+
 </html>
